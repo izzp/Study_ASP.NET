@@ -102,7 +102,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btnOK" runat="server" Text="注册" />
+                    <asp:Button ID="btnOK" runat="server" OnClick="btnOK_Click" Text="注册" />
                     <input id="Reset1" type="reset" value="重置" /></td>
                 <td>&nbsp;</td>
             </tr>
