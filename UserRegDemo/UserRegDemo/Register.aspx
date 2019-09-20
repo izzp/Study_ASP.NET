@@ -56,7 +56,7 @@
             <tr>
                 <td>姓名:</td>
                 <td>
-                    <asp:TextBox ID="txtName" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="reqtxtName" runat="server" ControlToValidate="txtName" ErrorMessage="必须填写姓名">*</asp:RequiredFieldValidator>
@@ -75,7 +75,7 @@
             <tr>
                 <td>年龄:</td>
                 <td>
-                    <asp:TextBox ID="txtAge" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RangeValidator ID="reqtxtAge" runat="server" ControlToValidate="txtAge" ErrorMessage="必须填写有效的年龄" MaximumValue="100" MinimumValue="1" Type="Integer">*（1~100）</asp:RangeValidator>
@@ -84,7 +84,7 @@
             <tr>
                 <td>Email:</td>
                 <td>
-                    <asp:TextBox ID="txtEmail" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RegularExpressionValidator ID="regtxtEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="必须填写有效的E-mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">例:i@mezzp.com</asp:RegularExpressionValidator>
@@ -93,7 +93,7 @@
             <tr>
                 <td class="auto-style2">QQ:</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="txtQQ" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtQQ" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style2">
                     <asp:RegularExpressionValidator ID="regtxtQQ" runat="server" ControlToValidate="txtQQ" ErrorMessage="必须填写有效的QQ" ValidationExpression="\d{5,12}">例:12345</asp:RegularExpressionValidator>
