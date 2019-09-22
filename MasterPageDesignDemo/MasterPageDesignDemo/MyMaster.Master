@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MyMaster.master.cs" Inherits="MyMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <title>我的主页</title>
+    <link href="css.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+<div id="wrapper">
+<div id="branding">
+<h1>我的网站</h1>
+</div> 
+ 
+<div id="content"> 
+<div id="mainContent">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div> 
+ 
+<div id="secondaryContent">
+<h2>每周推荐</h2>
+<p>请在这里添加文字</p>
+
+</div>
+</div>
+ 
+<ul id="mainNav"> 
+<li><a href="Default.aspx">我的首页</a></li> 
+<li><a href="Live.aspx">生活艺术</a></li> 
+<li><a href="Study.aspx">学习天地</a></li> 
+<li><a href="Link.aspx">友情链接</a></li> 
+<li><a href="Message.aspx">有话要说</a></li> 
+
+</ul> 
+ 
+<div id="footer">
+<p>CopyRight © 2013. All Right Reserved. </p>
+</div>
+</div>
+ 
+
+    </form>
+</body>
+</html>
